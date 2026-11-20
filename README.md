@@ -4,7 +4,9 @@ Static website source for sandiapurpose.com.
 
 The public files live in public/. A GitHub Actions workflow deploys that directory to GitHub Pages whenever main is updated. The existing housing and merch URLs are retained as simple redirects to the corresponding next-step sections on the homepage.
 
-The source is a static front end. It does not collect or store visitor data. Contact links open the visitor's email app; intake scheduling links open the published Google Calendar appointment page.
+The site is static. Foundation outreach and supporter inquiries open the visitor's email app. Housing and referral links let visitors call Recovery Services or request a callback by email. The site does not collect or store visitor data.
+
+Before restoring online booking, open the replacement schedule signed out, check that it offers a time with Recovery Services, and complete a test booking and cancellation with the coordinator. Check that both parties receive the confirmations. Keep the phone and email options available alongside any future booking link.
 
 ## Local preview
 
