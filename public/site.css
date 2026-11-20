@@ -35,6 +35,8 @@ nav { display: flex; align-items: center; flex-wrap: wrap; gap: .75rem 1.65rem; 
 nav a, footer a { font-size: .9375rem; font-weight: 700; text-decoration: none; }
 nav a:hover, footer a:hover { color: var(--clay); text-decoration: underline; text-underline-offset: .3em; }
 .nav-contact { border: 1px solid var(--line); border-radius: 2rem; padding: .55rem 1rem; }
+.nav-donate { border: 1px solid transparent; border-radius: 2rem; padding: .55rem 1rem; background: var(--green); color: var(--light); }
+.nav-donate:hover { background: #264c3b; color: var(--light); text-decoration: none; }
 .menu-toggle { color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 1.5rem; min-height: 2.75rem; padding: .6rem 1rem; font: 700 .9375rem/1 "Nunito Sans", sans-serif; }
 .menu-toggle span { margin-left: .35rem; }
 .hero { display: grid; position: relative; isolation: isolate; min-height: 43rem; overflow: hidden; background: var(--paper); }
@@ -102,6 +104,17 @@ h2 { font: 500 clamp(2.4rem, 4.2vw, 3.8rem)/1.18 Lora, Georgia, serif; letter-sp
 .story-caption { position: absolute; inset: auto 1.25rem 1.25rem; z-index: 1; display: flex; justify-content: space-between; gap: 1rem; color: var(--light); font-size: .875rem; font-weight: 700; }
 .story-copy > p:not(.kicker) { color: var(--muted); max-width: 43ch; margin-bottom: 1rem; font-size: 1.0625rem; }
 .story-copy > .text-link { display: inline-block; margin-top: .5rem; }
+.donations { background: #e7eee0; border-block: 1px solid #d4dfcc; }
+.donation-inner { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(17rem, .85fr); gap: 2rem 4rem; align-items: center; }
+.donations .kicker { color: var(--green); }
+.donation-copy > p:not(.kicker) { max-width: 51ch; color: var(--muted); font-size: 1.0625rem; }
+.donation-copy p.donation-identity { margin-top: 1.5rem; font-size: .9375rem; font-weight: 700; color: var(--green); }
+.donation-card { min-width: 0; padding: 2rem; border: 1px solid #d1dcc9; border-radius: 1.25rem; background: var(--light); }
+.donation-card h3 { margin: .6rem 0 1rem; font: 500 clamp(1.6rem, 2.5vw, 2.2rem)/1.25 Lora, Georgia, serif; letter-spacing: -.035em; }
+.donation-card > p:not(.kicker) { color: var(--muted); }
+.donation-card .button { width: 100%; margin-top: 1.4rem; padding-inline: .9rem; text-align: center; line-height: 1.4; }
+.donation-card p.donation-note { margin-top: 1.15rem; font-size: .875rem; }
+.donation-note a { text-underline-offset: .2em; }
 .faq { background: var(--paper); }
 .faq-inner { display: grid; grid-template-columns: .9fr 1.3fr; gap: 2rem 4rem; }
 .faq h2 { font-size: clamp(2.3rem, 3.8vw, 3.4rem); }
@@ -179,7 +192,8 @@ body.modal-open { overflow: hidden; }
   .path-title { font-size: 2rem; margin-block: .65rem .7rem; }
   .path-description { margin-bottom: 1rem; }
   .path-panel { padding: 1.4rem; }
-  .mission-inner, .story-inner, .faq-inner { grid-template-columns: 1fr; }
+  .mission-inner, .story-inner, .donation-inner, .faq-inner { grid-template-columns: 1fr; }
+  .donation-card { padding: 1.5rem; }
   .mission-inner { gap: 1.8rem; }
   .mission-rule { margin-top: 1rem; }
   .story-frame { aspect-ratio: 16/10; }
