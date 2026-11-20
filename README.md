@@ -1,15 +1,21 @@
-# Sandia Purpose Foundation website
+# Sandia Purpose website pages
 
-Static website source for sandiapurpose.com.
+Static website source for sandiapurpose.com. GitHub Actions publishes `public/` to GitHub Pages whenever `main` changes.
 
-The public files live in public/. A GitHub Actions workflow deploys that directory to GitHub Pages whenever main is updated. The existing housing and merch URLs are retained as simple redirects to the corresponding next-step sections on the homepage.
+Each page has a distinct identity and purpose:
 
-The source is a static front end. It does not collect or store visitor data. Contact links open the visitor's email app; intake scheduling links open the published Google Calendar appointment page.
+- `/` — Sandia Purpose Foundation: nonprofit mission, charitable giving, and Foundation involvement. Contact: rgutierrez@sandiapurpose.com.
+- `/recovery-services/` — Sandia Purpose Recovery Services LLC: housing inquiries, intake requests, and referrals. Contact: sandia@sandiaprs.com.
+- `/productions/` — Sandia Purposes Productions: freelance videography, a footage sample, and project inquiries. Contact: sandia@sandiaprs.com.
+
+Donation links appear only on the Foundation page and open its PayPal Giving Fund charity profile. SPR intake requests use email. The website does not collect or store visitor submissions.
+
+Legacy `/housing-referrals/` and `/merch-media/` links redirect to the relevant pages. Old homepage housing and referral fragments are routed to Recovery Services by `interactions.js`.
 
 ## Local preview
 
-Serve public/ with any static HTTP server, then open the local address it prints.
+Serve `public/` with a static HTTP server. The shared navigation and optional Foundation film dialog are in `interactions.js`; Foundation background-film controls are in `film.js`.
 
 ## Deployment
 
-Push to main. GitHub Actions publishes public/ to the github-pages environment. The custom domain is configured separately in the repository's Pages settings and at Squarespace DNS.
+Push to `main`. The Pages domain and email DNS are managed separately from the site source.
