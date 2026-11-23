@@ -6,7 +6,7 @@ Each page has a distinct identity and purpose:
 
 - `/` — Sandia Purpose Foundation: nonprofit mission, charitable giving, and Foundation involvement. Contact: rgutierrez@sandiapurpose.com.
 - `/recovery-services/` — Sandia Purpose Recovery Services LLC: housing inquiries, intake requests, and referrals. Contact: sandia@sandiaprs.com.
-- `/productions/` — Sandia Purposes Productions: freelance videography, seven selected films, a 20-second visual reel, and project inquiries. Contact: sandia@sandiaprs.com.
+- `/productions/` — Sandia Purpose Productions: freelance videography, seven selected films, a 20-second visual reel, and project inquiries. Contact: sandia@sandiaprs.com.
 
 Donation links appear only on the Foundation page and open its PayPal Giving Fund charity profile. SPR intake requests use email. The website does not collect or store visitor submissions.
 
