@@ -1,7 +1,7 @@
 const film = document.querySelector('#hero-film');
 const control = document.querySelector('#film-control');
 const motionPreference = matchMedia('(prefers-reduced-motion: reduce)');
-let wantsBackgroundMotion = !motionPreference.matches;
+let wantsBackgroundMotion = false;
 let heroIsVisible = true;
 let storyIsOpen = false;
 

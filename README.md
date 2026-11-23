@@ -1,23 +1,26 @@
-# Sandia Purpose website pages
+# Sandia Purpose Foundation website
 
-Static website source for sandiapurpose.com. GitHub Actions publishes `public/` to GitHub Pages whenever `main` changes.
+The public site at https://www.sandiapurpose.com/ is dedicated to Sandia Purpose Foundation. GitHub Actions publishes `public/` to GitHub Pages.
 
-Each page has a distinct identity and purpose:
+Foundation pages: Home, About & Governance, Our Mission, Giving & Funding Priorities, Get Involved, Contact, and Privacy. The content distinguishes the Foundation's charitable purpose from its current establishment and fundraising stage. Current funding priorities are the first employee, office space, supplies, and outreach, confirmed by Randy on November 23, 2026. The public address is mailing-only.
 
-- `/` — Sandia Purpose Foundation: nonprofit mission, charitable giving, and Foundation involvement. Contact: rgutierrez@sandiapurpose.com.
-- `/recovery-services/` — Sandia Purpose Recovery Services LLC: housing inquiries, intake requests, and referrals. Contact: sandia@sandiaprs.com.
-- `/productions/` — Sandia Purpose Productions: freelance videography, seven selected films, a 20-second visual reel, and project inquiries. Contact: sandia@sandiaprs.com.
+The IRS letter is presented with its September 21, 2026 determination date and September 1, 2026 effective date. Board names and roles are explicitly tied to the bylaws adopted November 20, 2026. No private signatures, account details, or bylaws execution records are published.
 
-Donation links appear only on the Foundation page and open its PayPal Giving Fund charity profile. SPR intake requests use email. The website does not collect or store visitor submissions.
+SPR and Productions have separate repositories and public websites:
 
-Legacy `/housing-referrals/` and `/merch-media/` links redirect to the relevant pages. Old homepage housing and referral fragments are routed to Recovery Services by `interactions.js`.
+- https://sandia-purpose-recovery.github.io/spr-recovery-services/
+- https://sandia-purpose-recovery.github.io/sandia-purpose-productions/
 
-Productions has its own visual identity in `public/productions/productions.css` and its own menu, film player, and background-film controls in `productions.js`. Its user-supplied films are web encodes in `public/assets/productions/`; the original media remains outside the repository. The player preserves native landscape and portrait framing. Background motion respects reduced-motion preferences. Barlow Condensed and Nunito Sans are self-hosted with their font licenses.
+Old housing and media page paths are small redirects to those sites and are excluded from the Foundation sitemap. Commercial content and Productions media are no longer hosted on the Foundation domain. The Foundation navigation is Foundation-only.
 
 ## Local preview
 
-Serve `public/` with a static HTTP server. The shared navigation and optional Foundation film dialog are in `interactions.js`; Foundation background-film controls are in `film.js`.
+Serve `public/` with a static HTTP server. Foundation background video is optional and loads only after a visitor clicks play. The About page introduction is also optional, with captions and an HTML transcript. The site collects no website form submissions, has no visitor accounts, and includes no advertising or analytics tracking.
+
+## Donation handling
+
+Giving opens the Foundation's PayPal Giving Fund charity page. The site explains that PayPal Giving Fund receives the donation and handles eligible delivery under its policies. A public link is not evidence of completed charity enrollment or payout setup. The Foundation site does not process payment details.
 
 ## Deployment
 
-Push to `main`. The Pages domain and email DNS are managed separately from the site source.
+Push `main`. Domain and email DNS are managed separately. This update does not change email records or submit a Google product activation request. Google reviews eligibility separately from deployment.

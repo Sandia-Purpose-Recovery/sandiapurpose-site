@@ -276,3 +276,72 @@ nav a[aria-current="page"] { text-decoration: underline; text-decoration-color: 
   .service-contact { padding: 1.5rem; }
   .production-still img { aspect-ratio: 4/3; }
 }
+
+/* Foundation information and fundraising pages. */
+.hero-image { background-image: url("assets/foundation-trees.webp"); }
+.mission-more { display: inline-block; margin-top: 1.1rem; }
+.foundation-page-lead { background: #f2eee3; border-bottom: 1px solid #dedecf; padding-block: clamp(3.5rem, 7vw, 6rem); }
+.foundation-page-lead h1 { font-size: clamp(2.7rem, 5.2vw, 4.5rem); line-height: 1.12; max-width: 19ch; margin-block: .9rem 1.3rem; }
+.foundation-deck { max-width: 62ch; font-size: clamp(1.0625rem, 1.5vw, 1.25rem); color: var(--muted); }
+.foundation-copy > p { max-width: 66ch; color: var(--muted); font-size: 1.0625rem; margin-bottom: 1.2rem; }
+.foundation-copy > h2 { font-size: clamp(1.9rem, 3vw, 2.7rem); margin-top: 2.4rem; }
+.foundation-copy > h2:first-child { margin-top: 0; }
+.foundation-copy > .text-link { margin-top: .4rem; }
+.foundation-identity { background: #f6eade; }
+.reading-layout { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, .8fr); gap: 2rem 4rem; align-items: start; }
+.identity-panel { border: 1px solid #d4ddcd; border-radius: 1.2rem; padding: 2rem; background: #f1f4eb; }
+.identity-panel h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); }
+.identity-panel dl { margin: 1.5rem 0; }
+.identity-panel dl > div { margin-bottom: 1.1rem; }
+.identity-panel dt { font-weight: 700; font-size: .875rem; }
+.identity-panel dd { margin: .2rem 0 0; color: var(--muted); font-size: .9375rem; }
+.identity-panel > p:not(.kicker) { color: var(--muted); margin-bottom: 1rem; }
+.identity-panel .button { margin-top: .7rem; }
+.stacked-links { display: flex; flex-direction: column; align-items: start; gap: 1rem; margin-top: 1.3rem; }
+.foundation-governance { background: #f7eade; }
+.board-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.4rem; padding-block: .2rem 1.6rem; }
+.board-grid article { border-top: 2px solid #b78a70; padding-top: 1rem; }
+.board-grid h3 { font: 500 clamp(1.35rem, 2.1vw, 1.8rem)/1.35 Lora, Georgia, serif; letter-spacing: -.025em; margin: 0 0 .5rem; }
+.board-grid p { color: var(--muted); font-size: .9375rem; }
+.governance-note { max-width: 95ch; color: var(--muted); margin-bottom: 1.25rem; }
+.mission-areas { margin: 1.6rem 0 2rem; }
+.mission-areas > div { padding-left: 1.2rem; border-left: 3px solid #a7b99d; margin-bottom: 1.7rem; }
+.mission-areas dt { font: 500 1.3rem/1.4 Lora, Georgia, serif; }
+.mission-areas dd { margin: .5rem 0 0; color: var(--muted); }
+.funding-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.3rem; }
+.funding-card { padding: 1.8rem; border: 1px solid var(--line); border-radius: 1.2rem; background: var(--light); }
+.funding-card h3 { font: 500 clamp(1.8rem, 3vw, 2.3rem)/1.2 Lora, Georgia, serif; letter-spacing: -.035em; margin: 0 0 1rem; }
+.funding-card p { color: var(--muted); max-width: 48ch; }
+.funding-context { color: var(--muted); max-width: 85ch; margin-top: 1.7rem; }
+.contact-email { display: block; max-width: 100%; overflow-wrap: anywhere; margin-top: 1.2rem; font-size: .9375rem; font-weight: 700; text-underline-offset: .3em; }
+.foundation-email { display: block; width: fit-content; max-width: 100%; overflow-wrap: anywhere; font-size: clamp(1.1rem, 2.4vw, 1.5rem); font-weight: 700; margin: 1rem 0 1.6rem; text-underline-offset: .25em; }
+.contact-topics { color: var(--muted); padding-left: 1.25rem; margin-block: 1.3rem 2rem; }
+.contact-topics li { margin-bottom: 1rem; }
+address { font-style: normal; line-height: 1.8; }
+.identity-panel .address-note { margin-top: 1rem; font-size: .9375rem; }
+.identity-ein { font-weight: 700; }
+.narrow-copy { max-width: 52rem; }
+.foundation-copy .dated-note { font-size: .875rem; }
+.foundation-footer { display: grid; grid-template-columns: 1.2fr .9fr .9fr; gap: 1.5rem 2.5rem; padding-block: 2.5rem; }
+.foundation-footer .footer-name { color: var(--ink); font: 500 1.3rem/1.4 Lora, Georgia, serif; margin-bottom: .5rem; }
+.foundation-footer p, .foundation-footer address { color: var(--muted); font-size: .875rem; }
+.foundation-footer .text-link { display: inline-block; overflow-wrap: anywhere; margin-top: 1rem; }
+.foundation-footer .footer-label { color: var(--ink); font-weight: 700; margin-bottom: .4rem; }
+.foundation-footer-links { display: flex; flex-direction: column; align-items: start; gap: .75rem; }
+.notfound-contact { margin-left: 1.5rem; }
+@media (max-width: 65rem) {
+  .reading-layout { gap: 2rem; grid-template-columns: minmax(0, 1.2fr) minmax(0, .9fr); }
+  .identity-panel { padding: 1.5rem; }
+  .foundation-footer { grid-template-columns: 1fr 1fr; }
+  .foundation-footer-links { grid-column: 1 / -1; flex-direction: row; flex-wrap: wrap; gap: .75rem 1.5rem; }
+}
+@media (max-width: 45rem) {
+  .foundation-page-lead h1 { font-size: clamp(2.3rem, 9vw, 3.7rem); }
+  .reading-layout, .funding-grid, .board-grid, .foundation-footer { grid-template-columns: 1fr; }
+  .funding-card { padding: 1.5rem; }
+  .identity-panel { margin-top: .5rem; }
+  .board-grid { gap: 1.5rem; }
+  .foundation-footer { gap: 1.8rem; }
+  .foundation-footer-links { grid-column: auto; flex-direction: column; gap: .8rem; }
+  .notfound-contact { display: inline-block; margin: 1.5rem 0 0; }
+}

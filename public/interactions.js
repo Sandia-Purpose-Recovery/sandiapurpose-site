@@ -1,23 +1,4 @@
 (() => {
-  // Old housing links now lead to the dedicated Recovery Services page.
-  const rootPage = location.pathname === '/' || location.pathname === '/index.html';
-  const legacyTargets = {
-    '#support-details': '/recovery-services/#intake',
-    '#referral-details': '/recovery-services/#referrals',
-    '#next-step': '/recovery-services/#intake',
-    '#help-details': '/#get-involved',
-  };
-  if (rootPage) {
-    const redirectLegacyHash = () => {
-      const target = legacyTargets[location.hash];
-      if (!target) return false;
-      location.replace(target);
-      return true;
-    };
-    if (redirectLegacyHash()) return;
-    addEventListener('hashchange', redirectLegacyHash);
-  }
-
   const menuButton = document.querySelector('.menu-toggle');
   const navigation = document.querySelector('#main-nav');
   if (menuButton && navigation) {
