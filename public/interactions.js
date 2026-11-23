@@ -1,4 +1,21 @@
 (() => {
+  if (location.pathname === '/' || location.pathname === '/index.html') {
+    const foundationLinks = {
+      '#donate': '/donate/',
+      '#story': '/about/#story',
+      '#faq': '/about/',
+      '#help-details': '/get-involved/',
+    };
+    const followFoundationLink = () => {
+      const target = foundationLinks[location.hash];
+      if (!target) return false;
+      location.replace(target);
+      return true;
+    };
+    if (followFoundationLink()) return;
+    addEventListener('hashchange', followFoundationLink);
+  }
+
   const menuButton = document.querySelector('.menu-toggle');
   const navigation = document.querySelector('#main-nav');
   if (menuButton && navigation) {
